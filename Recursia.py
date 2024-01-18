@@ -13,7 +13,7 @@ def test(*args, **kwargs):
         print('parameter ', j, ': ', key, "=", value)
 
 
-def increment(number_of_task):
+def increment():
     number_of_task[0] += 1
     return number_of_task[0]
 
@@ -22,7 +22,7 @@ number_of_task = [0]
 default_string = "_" * 30
 
 print(default_string)
-print("Задание №", increment(number_of_task), ": ")
+print("Задание №", increment(), ": ")
 test(1, 3, 'list', True, [1, 2, 3, 4, 5, 6, 7], town='Москва', fruit='Яблоко')
 
 
@@ -34,5 +34,5 @@ def factorial(n):
 
 
 print(default_string)
-print("Задание №", increment(number_of_task), ": ")
+print("Задание №", increment(), ": ")
 print('Факториал: ', factorial(8))
